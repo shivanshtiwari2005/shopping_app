@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:shopping_app/models/grocery_list.dart';
 
-void run() {
+void main() {
   runApp(const MyApp());
 }
 
