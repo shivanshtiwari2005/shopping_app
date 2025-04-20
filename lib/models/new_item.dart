@@ -93,7 +93,7 @@ class _NewItemState extends State<NewItem> {
                         items: [
                           for (final category in categories.entries)
                             DropdownMenuItem(
-                              value: category.key,
+                              value: category.value,
                               child: Row(
                                 children: [
                                   Container(
