@@ -34,10 +34,7 @@ const categories = {
     'Condiments',
     Color.fromARGB(255, 0, 255, 255),
   ),
-  Categories.seafood: Category(
-    'Seafood',
-    Color.fromARGB(255, 255, 128, 0),
-  ),
+  
   Categories.grains: Category(
     'Grains',
     Color.fromARGB(255, 128, 0, 255),

@@ -16,7 +16,8 @@ class _NewItemState extends State<NewItem> {
   final _formKey = GlobalKey<FormState>();
   var _enteredName = '';
   var _enteredQuantity = 1;
-  var _selectedCategory = categories[Categories.vegetables]!;
+  var _selectedCategory = 
+  categories[Categories.vegetables]!;
 
   void _saveItem() {
     if (_formKey.currentState!.validate()) {
@@ -46,20 +47,19 @@ class _NewItemState extends State<NewItem> {
               children: [
                 TextFormField(
                   maxLength: 50,
-                  decoration: const InputDecoration(label: Text('Name')),
+                  decoration: const InputDecoration(
+                    label: Text('Name')),
                   validator: (value) {
                     if (value == null ||
                         value.isEmpty ||
                         value.trim().length <= 1 ||
                         value.trim().length > 50) {
-                      return 'Must be between 1 and 50 characters';
+                      return 'Must be between 1 and 60 characters';
                     }
                     return null;
                   },
                   onSaved: (value) {
-                    // if (value == null || value.isEmpty) {
-                    //   return;
-                    // }
+                    
                     _enteredName = value!;
                   },
                 ),
